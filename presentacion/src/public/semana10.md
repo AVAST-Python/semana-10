@@ -58,7 +58,40 @@ Pero:
 
 ---
 
-Librerías TDD
+# Librerías de testing
+
+- `unittest` está integrada en Python
+
+Ejemplo unittest:
+```python
+class TestSuma(unittest.TestCase):
+
+    def test_suma_de_positivos(self):
+        res = suma(1,2)
+        expected = 3
+        self.assertEqual(res, expected)
+```
+- `pytest` es de las más utilizadas
+
+Ejemplo Pytest:
+```python
+def test_suma_de_positivos():
+    res = suma(1,2)
+    expected = 3
+    assert res == expected
+```
+
+
+Notes:
+python -m venv .venv
+source .venv/bin/activate
+python -m unittest ./suma_dos_numeros_unittest.py
+pip install pytest
+pytest
+
+
+from {file name} import {function name}
+from {directory name}.{file name} import {function name} // Subdirectorios
 
 ---
 
