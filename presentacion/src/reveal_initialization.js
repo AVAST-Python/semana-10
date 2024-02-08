@@ -70,6 +70,9 @@ Reveal.initialize({
       68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
       88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
       90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+			// For the remote control
+			37: 'prev', 38: 'prev',
+			39: 'next', 40: 'next',
 	  },
     customcontrols: {
 			controls: [
